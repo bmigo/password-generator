@@ -43,6 +43,97 @@ function generatePassword () {
       }
     }
 
+    if ((genNum === false) && (genLow === true) && (genUp === true) && (genSym === true)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += setTwo.charAt(choice);
+      }
+    }
+
+    if ((genNum === true) && (genLow === true) && (genUp === false) && (genSym === true)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += setThree.charAt(choice);
+      }
+    }
+
+    if ((genNum === true) && (genLow === false) && (genUp === true) && (genSym === true)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += setFour.charAt(choice);
+      }
+    }
+
+    if ((genNum === true) && (genLow === true) && (genUp === false) && (genSym === false)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += setFive.charAt(choice);
+      }
+    }
+
+    if ((genNum === true) && (genLow === false) && (genUp === true) && (genSym === false)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += setSix.charAt(choice);
+      }
+    }
+
+    if ((genNum === true) && (genLow === false) && (genUp === false) && (genSym === true)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += setSeven.charAt(choice);
+      }
+    }
+
+    if ((genNum === false) && (genLow === true) && (genUp === true) && (genSym === false)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += setEight.charAt(choice);
+      }
+    }
+
+    if ((genNum === false) && (genLow === true) && (genUp === false) && (genSym === true)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += setNine.charAt(choice);
+      }
+    }
+
+    if ((genNum === false) && (genLow === false) && (genUp === true) && (genSym === true)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += setTen.charAt(choice);
+      }
+    }
+
+    if ((genNum === true) && (genLow === false) && (genUp === false) && (genSym === false)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += numbers.charAt(choice);
+      }
+    }
+
+    if ((genNum === false) && (genLow === true) && (genUp === false) && (genSym === false)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += lowerCase.charAt(choice);
+      }
+    }
+
+    if ((genNum === false) && (genLow === false) && (genUp === true) && (genSym === false)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += upperCase.charAt(choice);
+      }
+    }
+
+    if ((genNum === false) && (genLow === false) && (genUp === false) && (genSym === true)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += symbols.charAt(choice);
+      }
+    }
+
 
     return newPass;
 
