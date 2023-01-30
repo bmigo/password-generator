@@ -35,6 +35,15 @@ function generatePassword () {
         newPass += allChar.charAt(choice);
       }
     }
+
+    if ((genNum === true) && (genLow === true) && (genUp === true) && (genSym === false)){
+      for (i = 0; i < charLength; i++) {
+        var choice = Math.floor(Math.random() * allChar.length);
+        newPass += setOne.charAt(choice);
+      }
+    }
+
+
     return newPass;
 
   }
