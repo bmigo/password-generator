@@ -6,5 +6,5 @@ This password generator uses alerts to prompt the user into choosing the feature
 ![alt text](./passgenss.png)
 
 # Links
-Deployed Link:
-Github: 
+Deployed Link: https://bmigo.github.io/password-generator/
+Github: https://github.com/bmigo/password-generator
